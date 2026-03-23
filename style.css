@@ -1,13 +1,13 @@
 body {
-  font-family: Verdana, Arial, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   color: black;
   margin: 0;
 }
 
 header {
-  background-color: rgb(59, 195, 109);
-  color: rgb(62, 42, 214);
+  background-color: rgb(118, 205, 38);
+  color: rgb(56, 27, 73);
   padding: 5rem;
   text-align: center;
 }
@@ -57,7 +57,7 @@ p {
 }
 
 a {
-  color: #02524e;
+  color: rgb(56, 27, 73);
   text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ section {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #2441b3;
+  color: rgb(0, 0, 0);
 }
 
 /* FORMULARIO */
@@ -95,9 +95,8 @@ select {
 button {
   width: 100%;
   padding: 1rem;
-  background-color: rgb(59, 195, 109
-  );
-  color: rgb(6, 0, 0);
+  background-color: rgb(118, 205, 38);
+  color: rgb(56, 27, 73);
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
