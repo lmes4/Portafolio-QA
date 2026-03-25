@@ -37,8 +37,8 @@ Se ha creado una base de datos en Supabase para almacenar los datos enviados des
 
 ## 🗄 API de Formulario
 Se ha generado una API que permite agregar, editar, consultar y eliminar datos de la base de datos creada en supabase.
-- URL API (requiere acceso): [Supabase API](https://vtizuqohukyyxvcshmbs.supabase.co)  
-- Documentación de la API: [Documentación API](./apidoc.pdf) 
+- URL API (requiere acceso): [Supabase API](https://nodpwmltalmdmxjgdpqy.supabase.co/rest/v1/form) 
+- Documentación de la API: [Documentación API](https://lmes4.github.io/Portafolio-QA/APIDOC.html) 
 ---
 
 ## ⚙️ QA Testing
