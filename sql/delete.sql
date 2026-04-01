@@ -1,5 +1,5 @@
 DELETE FROM form
-WHERE id = 8;
+WHERE name = 'Pedro';
 
 DELETE FROM form
 WHERE age = 30;
