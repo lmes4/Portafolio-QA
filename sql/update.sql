@@ -1,6 +1,6 @@
 UPDATE form
 SET email = 'lauratest@gmail.com'
-WHERE id = 12;
+WHERE name = 'Laura';
 
 UPDATE form
 SET age = 21
