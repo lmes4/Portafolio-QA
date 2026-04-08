@@ -4,7 +4,7 @@ SELECT * FROM form WHERE name is NULL ;
 SELECT * FROM form WHERE name LIKE 'A%';
 SELECT * FROM form WHERE age BETWEEN 20 AND 30;
 SELECT * FROM form 
-WHERE subject IN = ('job', 'information');
+WHERE subject IN ('job', 'information');
 SELECT * FROM form 
 WHERE name = 'Maria' OR name = 'Ana';
 SELECT * FROM form 
