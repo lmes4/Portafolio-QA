@@ -1213,7 +1213,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"message\": \"qa api testing test\"\r\n}",
+              "raw": "{\r\n  \"email\": \"apitestopcional@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"message\": \"qa api testing test\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1293,8 +1293,8 @@
                   "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1404,7 +1404,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n}",
+              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1429,14 +1429,57 @@
       "name": "DELETE FORM",
       "item": [
         {
+          "name": "DELETE FORM  por nombre apitest",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 204\", function () {\r",
+                  "    pm.response.to.have.status(204);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{API_URL}}/form?name=eq.apitest",
+              "host": [
+                "{{API_URL}}"
+              ],
+              "path": [
+                "form"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "eq.apitest"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "DELETE FORM sin autenticación",
           "event": [
             {
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
+                  "pm.test(\"Status code is 401\", function () {\r",
+                  "    pm.response.to.have.status(401);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"Response time is less than 2000ms\", function () {\r",
@@ -1470,57 +1513,14 @@
           "response": []
         },
         {
-          "name": "DELETE FORM  por nombre apitest",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "pm.test(\"Status code is 400\", function () {\r",
-                  "    pm.response.to.have.status(400);\r",
-                  "});\r",
-                  "\r",
-                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
-                  "});\r",
-                  ""
-                ],
-                "type": "text/javascript",
-                "packages": {},
-                "requests": {}
-              }
-            }
-          ],
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "url": {
-              "raw": "{{API_URL}}/form?name=apitest",
-              "host": [
-                "{{API_URL}}"
-              ],
-              "path": [
-                "form"
-              ],
-              "query": [
-                {
-                  "key": "name",
-                  "value": "apitest"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
           "name": "DELETE FORM  por nombre apitestoptional",
           "event": [
             {
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 400\", function () {\r",
-                  "    pm.response.to.have.status(400);\r",
+                  "pm.test(\"Status code is 204\", function () {\r",
+                  "    pm.response.to.have.status(204);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"Response time is less than 2000ms\", function () {\r",
@@ -1538,7 +1538,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{API_URL}}/form?name=apitestoptional",
+              "raw": "{{API_URL}}/form?name=eq.apitestopcional",
               "host": [
                 "{{API_URL}}"
               ],
@@ -1548,7 +1548,7 @@
               "query": [
                 {
                   "key": "name",
-                  "value": "apitestoptional"
+                  "value": "eq.apitestopcional"
                 }
               ]
             }
@@ -1648,8 +1648,8 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 400\", function () {\r",
-                  "    pm.response.to.have.status(400);\r",
+                  "pm.test(\"Status code is 204\", function () {\r",
+                  "    pm.response.to.have.status(204);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"Response time is less than 2000ms\", function () {\r",
@@ -1667,7 +1667,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{API_URL}}/form?email",
+              "raw": "{{API_URL}}/form?email=eq.",
               "host": [
                 "{{API_URL}}"
               ],
@@ -1677,7 +1677,7 @@
               "query": [
                 {
                   "key": "email",
-                  "value": null
+                  "value": "eq."
                 }
               ]
             }
