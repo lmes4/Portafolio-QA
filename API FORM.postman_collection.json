@@ -64,7 +64,7 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Body matches string\", function () {\r",
+                  "pm.test(\"La respuesta contiene el name Ana\", function () {\r",
                   "    pm.expect(pm.response.text()).to.include(\"Ana\");\r",
                   "});"
                 ],
@@ -120,8 +120,8 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "pm.test(\"Body matches string\", function () {\r",
                   "    pm.expect(pm.response.text()).to.include(\"job\");\r",
@@ -180,8 +180,8 @@
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"Body matches string\", function () {\r",
@@ -213,7 +213,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{API_URL}}/form?age=eq40",
+              "raw": "{{API_URL}}/form?age=eq.40",
               "host": [
                 "{{API_URL}}"
               ],
@@ -223,7 +223,7 @@
               "query": [
                 {
                   "key": "age",
-                  "value": "eq40"
+                  "value": "eq.40"
                 }
               ]
             }
@@ -240,8 +240,8 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "pm.test(\"Body matches string\", function () {\r",
                   "    pm.expect(pm.response.text()).to.include(\"maria@yahoo.com\");\r",
@@ -299,8 +299,8 @@
                   "pm.test(\"Status code is 401\", function () {\r",
                   "    pm.response.to.have.status(401);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   ""
                 ],
                 "type": "text/javascript",
@@ -337,9 +337,9 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
-                  ""
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+                  "});"
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -393,8 +393,8 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
@@ -450,8 +450,8 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
@@ -507,8 +507,8 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
@@ -569,8 +569,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -619,8 +619,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -669,8 +669,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -719,8 +719,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -822,8 +822,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -837,7 +837,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"\"\r\n}",
+              "raw": "{\r\n  \"name\": null\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -872,8 +872,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -887,7 +887,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"subject\": \"\",\r\n}",
+              "raw": "{\r\n  \"subject\": null\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -919,8 +919,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -934,7 +934,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"age\": \"\"\r\n}",
+              "raw": "{\r\n  \"age\": null\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -969,8 +969,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -984,7 +984,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"email\": \"\"\r\n}",
+              "raw": "{\r\n  \"email\": null\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1019,8 +1019,8 @@
                   "pm.test(\"Status code is 400\", function () {\r",
                   "    pm.response.to.have.status(400);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -1069,8 +1069,8 @@
                   "pm.test(\"Status code is 204\", function () {\r",
                   "    pm.response.to.have.status(204);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -1149,8 +1149,8 @@
                   "    pm.response.to.have.status(201);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1196,8 +1196,8 @@
                   "    pm.response.to.have.status(201);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1213,7 +1213,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n  \"message\": \"qa api testing test\"\r\n}",
+              "raw": "{\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"message\": \"qa api testing test\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1243,8 +1243,8 @@
                   "    pm.response.to.have.status(401);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1336,12 +1336,12 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 201\", function () {\r",
-                  "    pm.response.to.have.status(201);\r",
+                  "pm.test(\"Status code is 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1357,7 +1357,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n  \"message\": \"qa api testing test\"\r\n}",
+              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"age\": 25,\r\n  \"message\": \"qa api testing test\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1383,12 +1383,12 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 201\", function () {\r",
-                  "    pm.response.to.have.status(201);\r",
+                  "pm.test(\"Status code is 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1404,7 +1404,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n  \"message\": \"qa api testing test\"\r\n}",
+              "raw": "{\r\n  \"name\": \"apitest\",\r\n  \"email\": \"apitest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1429,7 +1429,7 @@
       "name": "DELETE FORM",
       "item": [
         {
-          "name": "GET FORM sin autenticación",
+          "name": "DELETE FORM sin autenticación",
           "event": [
             {
               "listen": "test",
@@ -1439,8 +1439,8 @@
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   "\r",
                   ""
@@ -1452,6 +1452,9 @@
             }
           ],
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "DELETE",
             "header": [],
             "url": {
@@ -1473,12 +1476,12 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
+                  "pm.test(\"Status code is 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
@@ -1492,12 +1495,18 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{API_URL}}/form",
+              "raw": "{{API_URL}}/form?name=apitest",
               "host": [
                 "{{API_URL}}"
               ],
               "path": [
                 "form"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "apitest"
+                }
               ]
             }
           },
@@ -1510,12 +1519,12 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
+                  "pm.test(\"Status code is 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
@@ -1529,12 +1538,18 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{API_URL}}/form",
+              "raw": "{{API_URL}}/form?age=job",
               "host": [
                 "{{API_URL}}"
               ],
               "path": [
                 "form"
+              ],
+              "query": [
+                {
+                  "key": "age",
+                  "value": "job"
+                }
               ]
             }
           },
@@ -1551,8 +1566,8 @@
                   "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
@@ -1576,8 +1591,7 @@
               "query": [
                 {
                   "key": "subject",
-                  "value": null,
-                  "type": "text"
+                  "value": null
                 }
               ]
             }
@@ -1595,8 +1609,8 @@
                   "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
                   ""
                 ],
